@@ -1,13 +1,16 @@
+import { Link, NavLink } from "react-router-dom";
 import Cartwidget from "../CartWidget/CartWidget";
 import styles from "./navbar.module.css";
 
 const Navbar = () => {
   return (
-    <nav className={`navbar navbar-expand-lg ${styles["navbar-custom"]}`}>
+    <nav className={`navbar navbar-expand-lg ${styles['navbar-custom']}`}>
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          DLevante
-        </a>
+        <h1 className={styles.logo}>
+          <Link to="/" className="navbar-brand">
+           Dlevante
+          </Link>
+        </h1>
         <button
           className="navbar-toggler"
           type="button"
@@ -20,21 +23,21 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                Remeras de Partido
-              </a>
+              <NavLink to="/category/Remerasoficiales" className="nav-link">
+                Remeras Oficiales
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <NavLink to="/category/Rodilleras" className="nav-link">
+                Rodilleras
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/category/Shorts" className="nav-link">
                 Shorts
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Remeras de Entrenamiento
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
