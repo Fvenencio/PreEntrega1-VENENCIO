@@ -1,13 +1,13 @@
 const products = [
-  { id: "1", name: "Remera Titular Negra", price: 22000, category: "Remerasoficiales", image: "https://picsum.photos/id/237/200/300" },
-  { id: "2", name: "Remera Titular Blanca", price: 20000, category: "Remerasoficiales", image: "https://picsum.photos/id/261/200/300" },
-  { id: "3", name: "Remera suplente Blanca", price: 18000, category: "Remerasofciales", image: "https://picsum.photos/id/239/200/300" },
-  { id: "4", name: "Rodillera Negra", price: 30000, category: "Rodilleras", image: "https://picsum.photos/id/266/200/300" },
-  { id: "5", name: "Rodillera Blanca", price: 28000, category: "Rodilleras", image: "https://picsum.photos/id/278/200/300" },
-  { id: "6", name: "Rodillera Negra", price: 29000, category: "Rodilleras", image: "https://picsum.photos/id/242/200/300" },
-  { id: "7", name: "Short Azul", price: 8000, category: "Shorts", image: "https://picsum.photos/id/250/200/300" },
-  { id: "8", name: "Short Negro", price: 9000, category: "Shorts", image: "https://picsum.photos/id/244/200/300" },
-  { id: "9", name: "Short Negro", price: 7000, category: "Shorts", image: "../assets/img/remera1.jpg" },
+  { id: "1", name: "Remera Titular Negra", price: 22000, category: "Remerasoficiales", image: "./img/remera1.jpg" },
+  { id: "2", name: "Remera Titular Blanca", price: 20000, category: "Remerasoficiales", image: "./img/remera2.jpg" },
+  { id: "3", name: "Remera suplente Blanca", price: 18000, category: "Remerasofciales", image: "./img/remera3.jpg" },
+  { id: "4", name: "Rodillera Negra", price: 30000, category: "Rodilleras", image: "./img/rodillera1.jpg" },
+  { id: "5", name: "Rodillera Blanca", price: 28000, category: "Rodilleras", image: "./img/rodillera2.jpg" },
+  { id: "6", name: "Rodillera Negra", price: 29000, category: "Rodilleras", image: "./img/rodillera3.jpg" },
+  { id: "7", name: "Short Azul", price: 8000, category: "Shorts", image: "./img/short1.jpg" },
+  { id: "8", name: "Short Negro", price: 9000, category: "Shorts", image: "./img/short2.jpg" },
+  { id: "9", name: "Short Negro", price: 7000, category: "Shorts", image: "./img/short3.jpg" },
 ];
 
 export const getProduct = (id) => {
@@ -22,7 +22,7 @@ export const getProduct = (id) => {
       } else {
         reject("No existe el producto");
       }
-    }, 1000);
+    }, 760);
   });
 };
 
@@ -37,6 +37,6 @@ export const getProducts = (category) => {
         : products;
 
       resolve(productsFiltered);
-    }, 1000);
+    }, 760);
   });
 };

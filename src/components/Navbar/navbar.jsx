@@ -8,7 +8,8 @@ const Navbar = () => {
       <div className="container-fluid">
         <h1 className={styles.logo}>
           <Link to="/" className="navbar-brand">
-           Dlevante
+          <img src="/img/favicon-16x16.png" alt="Dlevante" />
+          Dlevante
           </Link>
         </h1>
         <button
