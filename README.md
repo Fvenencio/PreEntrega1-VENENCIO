@@ -53,4 +53,4 @@ npm run dev
 
 # Demo.
 
-[Ver el video](./Vite%20+%20React%20-%20Google%20Chrome%202023-10-23%2020-47-09.mp4)
+[Ver el video](./public/img/Vite%20+%20React%20-%20Google%20Chrome%202023-10-23%2020-47-09.mp4)
