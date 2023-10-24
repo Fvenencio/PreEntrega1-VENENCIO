@@ -53,4 +53,5 @@ npm run dev
 
 # Demo.
 
-[Ver el video](./public/img/Vite%20+%20React%20-%20Google%20Chrome%202023-10-23%2020-47-09.mp4)
+
+https://github.com/Fvenencio/ProyectoFinal-VENENCIO/assets/130813984/68e85c68-31bf-44c1-a5c1-a9484e7ba00f
