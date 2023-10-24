@@ -51,7 +51,12 @@ npm run dev
 - VITE_MESSAGING_SENDER_ID: El ID del sender de Firebase.
 - VITE_APP_ID : El ID de la aplicación de Firebase.
 
+
+video demostracion de la página
 # Demo.
-
-
 https://github.com/Fvenencio/ProyectoFinal-VENENCIO/assets/130813984/68e85c68-31bf-44c1-a5c1-a9484e7ba00f
+
+
+
+
+
