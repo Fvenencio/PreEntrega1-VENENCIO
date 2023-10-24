@@ -10,7 +10,9 @@ const ItemList = ({ items, isLoading }) => {
     <div>
       <h1>Listado de Productos</h1>
 
-      <Link to="/checkout">Ir a finalizar compra</Link>
+      <Link to="/checkout" className="finish-checkout-link">
+        Finalizar compra
+      </Link>
 
       <ul>
         {items.map((item) => (
@@ -21,7 +23,7 @@ const ItemList = ({ items, isLoading }) => {
               <p>${item.price}</p>
               <p>{item.categoryId}</p>
               <p>Stock: {item.stock}</p>
-              <button onClick={() => addItem(item, 1)}>Agregar al carrito</button>
+              <button onClick={() => addItem(item, 1)}>Agregar</button>
             </Link>
           </li>
         ))}
